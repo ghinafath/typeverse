@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>typeverse</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+  <div class="top"><div id="time">30</div><div class="live"><span><b id="wpm">0</b>wpm</span><span><b id="acc">100</b>%</span></div></div>
+  <div id="view"><div id="text"><div id="caret"></div></div></div>
+  <div id="bar"><i id="fill"></i></div>
+  <div id="res">
+    <div class="big"><span id="rw">0</span><small>wpm</small></div>
+    <div class="row"><div><b id="ra">0%</b>akurasi</div><div><b id="rc">0</b>huruf benar</div><div><b id="re">0</b>salah</div></div>
+    <div class="row" style="margin-top:34px"><span>Tekan <kbd>Tab</kbd> untuk main lagi</span></div>
+  </div>
+  <div class="ctl">
+    <div class="grp" id="modes"><button data-t="15">15</button><button data-t="30" class="on">30</button><button data-t="60">60</button></div>
+    <div class="grp" id="cats"><button data-c="all" class="on">All</button><button data-c="heroes">Heroes</button><button data-c="villains">Villains</button><button data-c="teams">Teams</button><button data-c="places">Places</button><button data-c="objects">Objects</button></div>
+    <button id="shuf" title="New random words (Tab)">Shuffle</button>
+    <span class="hint"><kbd>Tab</kbd> shuffle</span>
+  </div>
+  <textarea id="inp" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="ketik"></textarea>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
